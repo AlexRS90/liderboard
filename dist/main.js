@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ fillList)\n/* harmony export */ });\nconst bestScores = [\n  {\n    name: 'Alejandro',\n    score: 100,\n  },\n  {\n    name: 'Matias',\n    score: 200,\n  },\n  {\n    name: 'Katia',\n    score: 150,\n  },\n  {\n    name: 'Janeth',\n    score: 500,\n  },\n];\n\n\nfunction fillList() {\n  let newWinner = '';\n  bestScores.forEach((winner) => {\n    newWinner += `<li class=\"d-flex top-scores\"><p>${winner.name}</p><p>${winner.score}</p></li>`;\n  });\n  document.querySelector('.best-scores').innerHTML = newWinner;\n}\n\n//# sourceURL=webpack://liderboard/./src/list.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ fillList)\n/* harmony export */ });\nconst bestScores = [\n  {\n    name: 'Alejandro',\n    score: 100,\n  },\n  {\n    name: 'Matias',\n    score: 200,\n  },\n  {\n    name: 'Katia',\n    score: 150,\n  },\n  {\n    name: 'Janeth',\n    score: 500,\n  },\n];\n\nfunction fillList() {\n  let newWinner = '';\n  bestScores.forEach((winner) => {\n    newWinner += `<li class=\"d-flex top-scores\"><p>${winner.name}</p><p>${winner.score}</p></li>`;\n  });\n  document.querySelector('.best-scores').innerHTML = newWinner;\n}\n\n//# sourceURL=webpack://liderboard/./src/list.js?");
 
 /***/ })
 

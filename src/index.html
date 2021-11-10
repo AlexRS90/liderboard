@@ -11,16 +11,16 @@
             <h1>Leaderboard</h1>
             <div class="boards d-flex">
                 <div class="d-flex direction">
-                    <form action="#" id="recent-scores">
-                        <label for="recent-scores">Recent scores</label>
-                        <button>Refresh</button>
-                    </form>
+                    <div class="recent-scores d-flex boards">
+                        <p>Recent scores</p>
+                        <button type="button">Refresh</button>
+                    </div>
                     <ul class="best-scores"></ul>
                 </div>
                 <div class="">
-                    <form action="#" id="add-score" class="d-flex direction">
-                        <label for="add-score">Add your score</label>
-                        <input type="text" placeholder="Your name">
+                    <form action="#" class="d-flex direction">
+                        <p>Add your score</p>
+                        <input id="add-score" type="text" placeholder="Your name">
                         <input type="text" placeholder="Your score">
                         <button type="submit">Submit</button>
                     </form>

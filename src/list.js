@@ -17,7 +17,6 @@ const bestScores = [
   },
 ];
 
-
 export default function fillList() {
   let newWinner = '';
   bestScores.forEach((winner) => {
