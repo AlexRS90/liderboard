@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <title>Lider Board</title>
 <script defer src="main.js"></script></head>
 <body>
-    <h1>Hello pumas!</h1>
+    <section class="main-section">
+        <div class="container d-flex direction">
+            <h1>Leaderboard</h1>
+            <div class="boards d-flex">
+                <div class="d-flex direction">
+                    <form action="#" id="recent-scores">
+                        <label for="recent-scores">Recent scores</label>
+                        <button>Refresh</button>
+                    </form>
+                    <ul class="best-scores"></ul>
+                </div>
+                <div class="">
+                    <form action="#" id="add-score" class="d-flex direction">
+                        <label for="add-score">Add your score</label>
+                        <input type="text" placeholder="Your name">
+                        <input type="text" placeholder="Your score">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
 
