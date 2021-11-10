@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-section {
+  padding: 3%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.direction {
+  flex-direction: column;
+}
+
+.boards {
+  justify-content: space-between;
+}
+
+.top-scores {
+  justify-content: space-between;
+  list-style: none;
+}
