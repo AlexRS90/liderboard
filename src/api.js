@@ -1,4 +1,4 @@
-async function callApi() {
+const callApi = async () => {
   await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {
     method: 'POST',
     body: JSON.stringify({
@@ -8,17 +8,17 @@ async function callApi() {
       'Content-type': 'application/json; charset=UTF-8',
     },
   })
-    .then((response) => response.json())
+    .then((resp) => resp.json())
     .then((json) => window.localStorage.setItem('bowlingMatch', json.result.split(' ')[3]));
 }
 
-async function getScores(id) {
+const getScores = async (id) => {
   await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores/`)
     .then((response) => response.json())
     .then((json) => window.localStorage.setItem('playerScore', JSON.stringify(json.result)));
 }
 
-async function newScores(name, points, id) {
+const newScores = async (name, points, id) => {
   await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores/`, {
     method: 'POST',
     body: JSON.stringify({
