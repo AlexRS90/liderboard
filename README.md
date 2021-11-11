@@ -4,12 +4,17 @@
 
 > Webpack Implementation.
 
-![screenshot](ssMilestone1.png)
+![screenshot](ssMilestone2.png)
 
 ### Milestone 1:
  - Setup webpack
  - Created a plain HTML markup with minimum styling
  - Added JavaScript modules with import and export
+### Milestone 2:
+- Created new game using the API
+- Added functionality to refresh button
+- Added functionality for add new score with the form
+- Used async functions and await
 
 ## Built With
 

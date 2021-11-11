@@ -13,16 +13,16 @@
                 <div class="d-flex direction">
                     <div class="recent-scores d-flex boards">
                         <p>Recent scores</p>
-                        <button type="button">Refresh</button>
+                        <button type="button" id="refresh">Refresh</button>
                     </div>
                     <ul class="best-scores"></ul>
                 </div>
                 <div class="">
                     <form action="#" class="d-flex direction">
                         <p>Add your score</p>
-                        <input id="add-score" type="text" placeholder="Your name">
-                        <input type="text" placeholder="Your score">
-                        <button type="submit">Submit</button>
+                        <input type="text" placeholder="Your name" required id="new-player">
+                        <input type="number" placeholder="Your score" required id="new-score">
+                        <button type="submit" id="send-new-score">Submit</button>
                     </form>
                 </div>
             </div>
