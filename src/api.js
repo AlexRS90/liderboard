@@ -10,13 +10,13 @@ const callApi = async () => {
   })
     .then((resp) => resp.json())
     .then((json) => window.localStorage.setItem('bowlingMatch', json.result.split(' ')[3]));
-}
+};
 
 const getScores = async (id) => {
   await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores/`)
     .then((response) => response.json())
     .then((json) => window.localStorage.setItem('playerScore', JSON.stringify(json.result)));
-}
+};
 
 const newScores = async (name, points, id) => {
   await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores/`, {
@@ -31,6 +31,6 @@ const newScores = async (name, points, id) => {
   })
     .then((response) => response.json())
     .then(() => getScores(id));
-}
+};
 
 export { callApi, newScores, getScores };
