@@ -1,4 +1,5 @@
 import './style.css';
-import fillList from './list';
+import * as leaderBoard from './list';
 
-fillList();
+leaderBoard.playGame();
+leaderBoard.dispScores();
