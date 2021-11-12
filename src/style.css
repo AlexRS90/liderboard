@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fresca&family=Poppins:ital,wght@1,100;1,400&display=swap');
+
 html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Fresca', sans-serif;
 }
 
 .main-section {
@@ -20,7 +23,92 @@ body {
   justify-content: space-between;
 }
 
+.header {
+  font-size: 70px;
+  margin-top: 0;
+  margin-left: 10%;
+  color: #005638;
+}
+
+.container {
+  margin-left: 10%;
+}
+
+.recent-scores {
+  justify-content: space-between;
+  align-items: baseline;
+  padding-right: 5px;
+}
+
+.recent-scores p {
+  flex-basis: 60%;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0;
+  color: #005638;
+}
+
+.score-container {
+  flex-basis: 40%;
+}
+
+.bg-gradient {
+  border-radius: 10px;
+  background: linear-gradient(#36d1dc, #5b86e5);
+}
+
+.best-scores {
+  border-radius: 10px;
+  margin: 5px;
+  padding: 3%;
+  background: linear-gradient(#a8ff78, #78ffd6);
+}
+
 .top-scores {
   justify-content: space-between;
   list-style: none;
+}
+
+.top-scores p {
+  color: #005638;
+  font-size: 30px;
+}
+
+.form-container {
+  flex-basis: 40%;
+}
+
+.form-container form p {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #005638;
+}
+
+.button2 {
+  border-radius: 10px;
+  padding: 10px;
+  width: 30%;
+  background: linear-gradient(#a8ff78, #78ffd6);
+  border: 2px solid #638df7;
+  color: #005638;
+  font-family: 'Fresca', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.align {
+  align-self: center;
+  margin-left: 131px;
+}
+
+.new-entry {
+  width: 50%;
+  align-self: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid #638df7;
+  font-size: 20px;
+  font-family: 'Fresca', sans-serif;
 }
