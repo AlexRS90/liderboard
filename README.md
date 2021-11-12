@@ -4,7 +4,7 @@
 
 > Webpack Implementation.
 
-![screenshot](ssMilestone2.png)
+![screenshot](ssMilestone3.png)
 
 ### Milestone 1:
  - Setup webpack
@@ -15,13 +15,18 @@
 - Added functionality to refresh button
 - Added functionality for add new score with the form
 - Used async functions and await
-
+### Milestone 3:
+- Added some classes into index.html for styling
+- Added selectors to style.css
+ 
 ## Built With
 
 - HTML, CSS & JS
 - Visual Studio Code
 - Webpack
 - Linters
+## Live demo
+https://alexrs90.github.io/liderboard/dist
 
 ## Set up locally
 
