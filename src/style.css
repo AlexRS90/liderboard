@@ -55,7 +55,7 @@ body {
 .bg-gradient {
   border-radius: 10px;
   background: linear-gradient(#36d1dc, #5b86e5);
-  max-width: auto;
+  max-width: 100%;
 }
 
 .best-scores {
