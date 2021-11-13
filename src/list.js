@@ -1,4 +1,4 @@
-import * as bowling from './api';
+import * as bowling from './api';//eslint-disable-line
 
 let bestScores = [];
 let idMatch = '';
@@ -37,7 +37,7 @@ const dispScores = () => {
 };
 
 const displayCofirmationMessage = (message) => {
-  if(message === 'Leaderboard score created correctly.') {
+  if (message === 'Leaderboard score created correctly.') {
     document.querySelector('.message').classList.toggle('message-transition');
     setTimeout(() => {
       document.querySelector('.message').classList.toggle('message-transition');
