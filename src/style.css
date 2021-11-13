@@ -129,7 +129,6 @@ body {
   background: #005638;
   color: #78ffd6;
   border: 2px solid #a8ff78;
-  cursor: pointer;
 }
 
 .align {
@@ -173,7 +172,7 @@ body {
 @media (max-width: 800px) {
   .container {
     flex-direction: column-reverse;
-    gap: 50px;
+    gap: 20px;
   }
 
   .button2 {
