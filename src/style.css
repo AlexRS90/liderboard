@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fresca&family=Poppins:ital,wght@1,100;1,400&display=swap');
+
 html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Fresca', sans-serif;
 }
 
 .main-section {
@@ -20,7 +23,142 @@ body {
   justify-content: space-between;
 }
 
+.header {
+  font-size: 70px;
+  margin-top: 0;
+  margin-left: 10%;
+  color: #005638;
+}
+
+.container {
+  justify-content: space-around;
+}
+
+.recent-scores {
+  justify-content: space-between;
+  align-items: baseline;
+  padding-right: 5px;
+}
+
+.recent-scores p {
+  flex-basis: 60%;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0;
+  color: #005638;
+}
+
+.score-container {
+  flex-basis: 40%;
+}
+
+.bg-gradient {
+  border-radius: 10px;
+  background: linear-gradient(#36d1dc, #5b86e5);
+  max-width: 100%;
+}
+
+.best-scores {
+  border-radius: 10px;
+  margin: 5px;
+  padding: 4%;
+  background: linear-gradient(#a8ff78, #78ffd6);
+  max-height: 400px;
+  overflow: scroll;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .top-scores {
   justify-content: space-between;
   list-style: none;
+  border-bottom: 1px solid #638df7;
+}
+
+.top-scores:last-child {
+  border-bottom: transparent;
+}
+
+.top-scores p {
+  color: #005638;
+  font-size: 30px;
+}
+
+.truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.form-container {
+  flex-basis: 30%;
+  background: linear-gradient(#36d1dc, #5b86e5);
+  max-height: 300px;
+  border-radius: 10px;
+}
+
+.form-container form p {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  color: #005638;
+}
+
+#new-player-form {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.button2 {
+  border-radius: 10px;
+  padding: 10px;
+  width: 30%;
+  background: linear-gradient(#a8ff78, #78ffd6);
+  border: 2px solid #638df7;
+  color: #005638;
+  font-family: 'Fresca', sans-serif;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+.align {
+  align-self: flex-end;
+  margin-right: 5px;
+}
+
+.new-entry {
+  width: 70%;
+  align-self: flex-end;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid #638df7;
+  font-size: 20px;
+  font-family: 'Fresca', sans-serif;
+  margin-right: 5px;
+}
+
+.input-number {
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 25px !important;
+  padding-left: 15px;
+}
+
+.message-transition {
+  color: #fff !important;
+}
+
+.transition {
+  transition: all 0.5s ease-in-out;
+}
+
+.message button {
+  align-self: flex-start;
 }

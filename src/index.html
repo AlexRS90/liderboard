@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lider Board</title>
+    <title>Liderboard</title>
 </head>
 <body>
     <section class="main-section">
-        <div class="container d-flex direction">
-            <h1>Leaderboard</h1>
-            <div class="boards d-flex">
-                <div class="d-flex direction">
+        <nav>
+            <h1 class="header">Amazing Bowling Game</h1>
+        </nav>
+            <div class="boards d-flex container">
+                <div class="d-flex direction score-container">
                     <div class="recent-scores d-flex boards">
                         <p>Recent scores</p>
-                        <button type="button" id="refresh">Refresh</button>
+                        <button type="button" class="button2" id="refresh">Refresh</button>
                     </div>
-                    <ul class="best-scores"></ul>
+                    <div class="bg-gradient">
+                        <ul class="best-scores"></ul>
+                    </div>
                 </div>
-                <div class="">
-                    <form action="#" class="d-flex direction">
+                <div class="form-container">
+                    <form action="POST" id="new-player-form" class="d-flex direction">
                         <p>Add your score</p>
-                        <input type="text" placeholder="Your name" required id="new-player">
-                        <input type="number" placeholder="Your score" required id="new-score">
-                        <button type="submit" id="send-new-score">Submit</button>
+                        <input type="text" placeholder="Player's Name" class="new-entry" maxlength="20" required id="new-player">
+                        <input type="number" placeholder="Your score" required class="new-entry input-number" min="1" max="300" id="new-score">
+                        <div class="d-flex boards">
+                            <p class="message message-transition transition">Player saved!</p>
+                            <button type="submit" class="button2 align" id="send-new-score">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
-        </div>
     </section>
 </body>
 </html>
