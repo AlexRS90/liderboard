@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Liderboard
+## Leaderboard
 
 > Webpack Implementation.
 
-![screenshot](ssMilestone3.png)
+![screenshot](ssFinal.png)
 
 ### Milestone 1:
  - Setup webpack
