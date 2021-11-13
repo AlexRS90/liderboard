@@ -1,4 +1,4 @@
-import { fillList, displayCofirmationMessage } from "./list";
+import { fillList, displayCofirmationMessage } from './list';//eslint-disable-line
 
 const callApi = async () => {
   const call = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {
