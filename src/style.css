@@ -172,7 +172,7 @@ body {
 @media (max-width: 800px) {
   .container {
     flex-direction: column-reverse;
-    gap: 20px
+    gap: 20px;
   }
 
   .button2 {
