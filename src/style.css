@@ -125,6 +125,12 @@ body {
   font-size: 1.5vw;
 }
 
+.button2:hover {
+  background: #005638;
+  color: #78ffd6;
+  border: 2px solid #a8ff78;
+}
+
 .align {
   align-self: flex-end;
   margin-right: 5px;
@@ -161,4 +167,15 @@ body {
 
 .message button {
   align-self: flex-start;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 20px
+  }
+
+  .button2 {
+    font-size: 4vw;
+  }
 }
