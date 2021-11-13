@@ -1,5 +1,7 @@
+import { fillList, displayCofirmationMessage } from "./list";
+
 const callApi = async () => {
-  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {
+  const call = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {
     method: 'POST',
     body: JSON.stringify({
       name: 'Amazing Bowling Game',
@@ -7,19 +9,19 @@ const callApi = async () => {
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
-  })
-    .then((resp) => resp.json())
-    .then((json) => window.localStorage.setItem('bowlingMatch', json.result.split(' ')[3]));
+  });
+  const data = await call.json();
+  window.localStorage.setItem('bowlingMatch', data.result.split(' ')[3]);
 };
 
 const getScores = async (id) => {
-  await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores/`)
-    .then((response) => response.json())
-    .then((json) => window.localStorage.setItem('playerScore', JSON.stringify(json.result)));
+  const player = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores/`);
+  const arr = await player.json();
+  fillList(arr.result);
 };
 
 const newScores = async (name, points, id) => {
-  await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores/`, {
+  const submit = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores/`, {
     method: 'POST',
     body: JSON.stringify({
       user: name,
@@ -28,9 +30,9 @@ const newScores = async (name, points, id) => {
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
-  })
-    .then((response) => response.json())
-    .then(() => getScores(id));
+  });
+  const message = await submit.json();
+  displayCofirmationMessage(message.result);
 };
 
 export { callApi, newScores, getScores };
