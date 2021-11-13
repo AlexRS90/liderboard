@@ -21,11 +21,14 @@
                     </div>
                 </div>
                 <div class="form-container">
-                    <form action="#" class="d-flex direction">
+                    <form action="POST" id="new-player-form" class="d-flex direction">
                         <p>Add your score</p>
-                        <input type="text" placeholder="Your name" class="new-entry" required id="new-player">
-                        <input type="number" placeholder="Your score" required class="new-entry" id="new-score">
-                        <button type="submit" class="button2 align" id="send-new-score">Submit</button>
+                        <input type="text" placeholder="Player's Name" class="new-entry" maxlength="20" required id="new-player">
+                        <input type="number" placeholder="Your score" required class="new-entry input-number" min="1" max="300" id="new-score">
+                        <div class="d-flex boards">
+                            <p class="message message-transition transition">Player saved!</p>
+                            <button type="submit" class="button2 align" id="send-new-score">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
